@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Quiz_Game.View.StudentProfilePage"
+             Title="StudentProfilePage"
+             BackgroundColor="#158FFF">
+    <StackLayout VerticalOptions="Center" 
+             HorizontalOptions="Center" 
+             WidthRequest="308"
+             HeightRequest="466"
+             BackgroundColor="#FFFFFF">
+        
+        <Label Text="Profile"
+               HorizontalTextAlignment ="Center"
+               VerticalTextAlignment="Center"
+               FontSize="20"
+               BackgroundColor="#007DF0"
+               FontAttributes="Bold"
+               WidthRequest="308"
+               HeightRequest="79"/>
+
+        <StackLayout Orientation="Horizontal"  
+                     HorizontalOptions="Center"
+                     Margin="10">
+            
+            <Label Text="Username :  "
+                   FontSize="16"
+                   TextColor="#000000"/>
+        
+            <Label x:Name="usernameLabel" 
+                   Text="Default Text" 
+                   TextColor="#000000"
+                   FontSize="16"/>
+
+            
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal"  
+                     HorizontalOptions="Center"
+                     Margin="10">
+            
+            <Label Text="Date of Birth :  "
+                   FontSize="16"
+                   TextColor="#000000"/>
+        
+            <Label x:Name="birthdateLabel" 
+                   Text="Default Text" 
+                   TextColor="#000000"
+                   FontSize="16"/>
+            
+            
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal"  
+                     HorizontalOptions="Center"
+                     Margin="10">
+            
+            <Button Text="Edit" 
+                    x:Name="onEditBtn"
+                    Clicked="OnEditClicked" 
+                    WidthRequest="123"
+                    HeightRequest="40"
+                    CornerRadius="0"
+                    TextColor="#ffffff"
+                    BackgroundColor="#158FFF"
+                    Margin="10,0,0,10"/>
+            
+            
+            <Button Text="Back" 
+                Clicked="OnBackClicked" 
+                WidthRequest="123"
+                HeightRequest="40"
+                CornerRadius="0"
+                TextColor="#ffffff"
+                BackgroundColor="#158FFF"
+                Margin="10,0,10,10"/>
+        </StackLayout>
+
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,40 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Quiz_Game.View.EditProfilePage"
+             Title="EditProfilePage"
+             BackgroundColor="#158FFF">
+    <StackLayout VerticalOptions="Center" 
+             HorizontalOptions="Center" 
+             WidthRequest="308"
+             HeightRequest="466"
+             BackgroundColor="#FFFFFF">
+
+        <Label Text="Edit Profile"
+               HorizontalTextAlignment ="Center"
+               VerticalTextAlignment="Center"
+               FontSize="20"
+               BackgroundColor="#007DF0"
+               FontAttributes="Bold"
+               WidthRequest="308"
+               HeightRequest="79"/>
+
+        <Entry x:Name="usernameEntry" 
+               Placeholder="Username" 
+               TextColor="#000000"
+               Text="{Binding Username}"/>
+
+        <DatePicker x:Name="birthdatePicker" 
+                    Date="{Binding BirthDate}"
+                    TextColor="#000000"/>
+
+        
+        <Button Text="Save" 
+                Clicked="OnSaveClicked" 
+                WidthRequest="123"
+                HeightRequest="40"
+                CornerRadius="0"
+                TextColor="#ffffff"
+                BackgroundColor="#158FFF"
+                Margin="10,0,0,10"/>
+    </StackLayout>
+</ContentPage>

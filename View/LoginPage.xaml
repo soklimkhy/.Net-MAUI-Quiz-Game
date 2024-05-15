@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Quiz_Game.View.LoginPage"
+             BackgroundColor="#158FFF">
+    
+    <StackLayout VerticalOptions="Center" 
+                 HorizontalOptions="Center" 
+                 WidthRequest="390"
+                 HeightRequest="350"
+                 BackgroundColor="#FFFFFF">
+
+        <Label Text="Login"
+               HorizontalTextAlignment ="Center"
+               VerticalTextAlignment="Center"
+               FontSize="32"
+               BackgroundColor="#007DF0"
+               FontAttributes="Bold"
+               WidthRequest="390"
+               HeightRequest="74"/>
+
+        <Border Stroke="#DFDFDF" 
+                WidthRequest="266"
+                HeightRequest="50"
+                Margin="0,34,0,20">
+            <Entry x:Name="usernameLogin" 
+                   Placeholder="Username"
+                   TextColor="#000000"
+                   HorizontalTextAlignment ="Center"
+                   VerticalTextAlignment="Center" />
+        </Border>
+
+        <Border Stroke="#DFDFDF" 
+                WidthRequest="266"
+                HeightRequest="50"
+                Margin="0,0,0,20" 
+                HorizontalOptions="Center">
+
+            <Entry x:Name="passwordLogin" 
+                   Placeholder="Password" 
+                   TextColor="#000000"
+                   IsPassword="true"
+                   HorizontalTextAlignment ="Center"
+                   VerticalTextAlignment="Center"/>
+
+        </Border>
+
+        <Button Text="Login"
+                Clicked="onLoginButtonClicked"               
+                TextColor="#ffffff"
+                BackgroundColor="#158FFF"
+                WidthRequest="266"
+                HeightRequest="40"
+                Margin="0,0,0,12" 
+                CornerRadius="0"/>
+
+        <StackLayout Orientation="Horizontal"  
+                     HorizontalOptions="Center"
+                     Margin="0,0,0,60">
+            
+            <Label Text="Don’t have an account?" 
+                   TextColor="#000000"/>
+            <Label Text=" Register Now" 
+                   TextColor="#158FFF">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnRegisterLabelTapped" />
+                </Label.GestureRecognizers>
+            </Label>
+            
+        </StackLayout>
+        
+    </StackLayout>
+    
+</ContentPage>

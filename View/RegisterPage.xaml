@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Quiz_Game.View.RegisterPage"
+             BackgroundColor="#158FFF">
+    <StackLayout VerticalOptions="Center" 
+             HorizontalOptions="Center" 
+             WidthRequest="390"
+             HeightRequest="350"
+             BackgroundColor="#FFFFFF">
+
+        <Label Text="Register"
+               HorizontalTextAlignment ="Center"
+               VerticalTextAlignment="Center"
+               FontSize="32"
+               BackgroundColor="#007DF0"
+               FontAttributes="Bold"
+               WidthRequest="390"
+               HeightRequest="74"/>
+
+        <Border Stroke="#DFDFDF" 
+                WidthRequest="266"
+                HeightRequest="50"
+                Margin="0,34,0,20">
+            
+            <Entry x:Name="usernameRegister" 
+                   Placeholder="Username"
+                   TextColor="#000000"
+                   HorizontalTextAlignment ="Center"
+                   VerticalTextAlignment="Center" />
+        </Border>
+
+
+        <Border Stroke="#DFDFDF" 
+                WidthRequest="266"
+                HeightRequest="50"
+                Margin="0,0,0,20" 
+                HorizontalOptions="Center">
+
+            <Entry x:Name="passwordRegister" 
+                   Placeholder="Password" 
+                   TextColor="#000000"
+                   IsPassword="true"
+                   HorizontalTextAlignment ="Center"
+                   VerticalTextAlignment="Center"/>
+
+        </Border>
+        
+        <StackLayout Orientation="Horizontal"  
+                     HorizontalOptions="Center"
+                     Margin="0,0,0,12">
+
+            <Border WidthRequest="123"
+                    HeightRequest="45"
+                    Stroke="#DFDFDF">
+                
+                <DatePicker x:Name="datePickerRegister" 
+                            MinimumDate="01/01/1960" 
+                            MaximumDate="01/01/2015"
+                            TextColor="#000000"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center"/>
+            </Border>
+            <Button Text="Register" 
+                    Clicked="onRegisterButtonClicked"
+                    WidthRequest="123"
+                    HeightRequest="40"
+                    CornerRadius="0"
+                    TextColor="#ffffff"
+                    BackgroundColor="#158FFF"
+                    Margin="21,0,0,0"/>
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal" 
+                     HorizontalOptions="Center"
+                     Margin="0,0,0,60">
+            
+            <Label Text="Already have an account?" 
+                   TextColor="#000000"/>
+            
+            <Label Text=" Login Now" 
+                   TextColor="#158FFF">
+
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnLoginLabelTapped" />
+                </Label.GestureRecognizers>
+            </Label>
+            
+        </StackLayout>
+        
+    </StackLayout>
+    
+</ContentPage>

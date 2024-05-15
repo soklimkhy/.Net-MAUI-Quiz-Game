@@ -1,0 +1,125 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net8.0-ios
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Quiz_Game
+build_property.ProjectDir = C:\Users\User\Desktop\Quiz Game\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+
+[C:/Users/User/Desktop/Quiz Game/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Quiz_Game.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[C:/Users/User/Desktop/Quiz Game/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Quiz_Game.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[C:/Users/User/Desktop/Quiz Game/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Quiz_Game.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/Users/User/Desktop/Quiz Game/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Quiz_Game.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[C:/Users/User/Desktop/Quiz Game/View/CreateQuizPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Quiz_Game.View.CreateQuizPage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\CreateQuizPage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\CreateQuizPage.xaml
+
+[C:/Users/User/Desktop/Quiz Game/View/EditProfilePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Quiz_Game.View.EditProfilePage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\EditProfilePage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\EditProfilePage.xaml
+
+[C:/Users/User/Desktop/Quiz Game/View/EditQuizPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Quiz_Game.View.EditQuizPage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\EditQuizPage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\EditQuizPage.xaml
+
+[C:/Users/User/Desktop/Quiz Game/View/LeaderboardPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Quiz_Game.View.LeaderboardPage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\LeaderboardPage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\LeaderboardPage.xaml
+
+[C:/Users/User/Desktop/Quiz Game/View/LoginPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Quiz_Game.View.LoginPage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\LoginPage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\LoginPage.xaml
+
+[C:/Users/User/Desktop/Quiz Game/View/RegisterPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Quiz_Game.View.RegisterPage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\RegisterPage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\RegisterPage.xaml
+
+[C:/Users/User/Desktop/Quiz Game/View/StartQuizDetailPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Quiz_Game.View.StartQuizDetailPage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\StartQuizDetailPage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\StartQuizDetailPage.xaml
+
+[C:/Users/User/Desktop/Quiz Game/View/StartQuizPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Quiz_Game.View.StartQuizPage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\StartQuizPage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\StartQuizPage.xaml
+
+[C:/Users/User/Desktop/Quiz Game/View/StudentDashboardPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Quiz_Game.View.StudentDashboardPage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\StudentDashboardPage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\StudentDashboardPage.xaml
+
+[C:/Users/User/Desktop/Quiz Game/View/StudentProfilePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Quiz_Game.View.StudentProfilePage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\StudentProfilePage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\StudentProfilePage.xaml
+
+[C:/Users/User/Desktop/Quiz Game/View/SubjectDetailPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Quiz_Game.View.SubjectDetailPage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\SubjectDetailPage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\SubjectDetailPage.xaml
+
+[C:/Users/User/Desktop/Quiz Game/View/SubjectPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Quiz_Game.View.SubjectPage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\SubjectPage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\SubjectPage.xaml
+
+[C:/Users/User/Desktop/Quiz Game/View/TeacherDashboardPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Quiz_Game.View.TeacherDashboardPage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\TeacherDashboardPage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\TeacherDashboardPage.xaml
+
+[C:/Users/User/Desktop/Quiz Game/View/TeacherProfilePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Quiz_Game.View.TeacherProfilePage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\TeacherProfilePage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\TeacherProfilePage.xaml

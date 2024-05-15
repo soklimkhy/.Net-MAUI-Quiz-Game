@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Quiz_Game.View.TeacherProfilePage"
+             BackgroundColor="#158FFF">
+    <StackLayout VerticalOptions="Center" 
+                 HorizontalOptions="Center" 
+                 WidthRequest="308"
+                 HeightRequest="364"
+                 BackgroundColor="#FFFFFF">
+        
+        <Label Text="Profile"
+               HorizontalTextAlignment ="Center"
+               VerticalTextAlignment="Center"
+               FontSize="20"
+               BackgroundColor="#007DF0"
+               FontAttributes="Bold"
+               WidthRequest="308"
+               HeightRequest="79"/>
+        
+        <Label Text="Username : ITSTEP"
+               FontSize="16"
+               Margin="53,31,0,40"
+               TextColor="#000000"/>
+        
+        <Label Text="Password : ITSTEP"
+               FontSize="16"
+               Margin="53,0,0,40"
+               TextColor="#000000"/>
+        
+        <Label Text="Date Of Birth : 01/01/2001"
+               FontSize="16"
+               Margin="53,0,0,40"
+               TextColor="#000000"/>
+        
+        <Button Text="Back"   
+                TextColor="#ffffff"
+                BackgroundColor="#158FFF"
+                WidthRequest="226"
+                HeightRequest="41"
+                Margin="0,0,0,40" 
+                CornerRadius="0"
+                Clicked="OnBackClicked"/>
+
+
+
+
+    </StackLayout>
+</ContentPage>

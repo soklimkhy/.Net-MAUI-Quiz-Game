@@ -1,0 +1,2287 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Quiz_Game.View.CreateQuizPage"
+             BackgroundColor="#158FFF">
+    <ScrollView>
+        <StackLayout VerticalOptions="Center" 
+                     HorizontalOptions="Center"                 
+                     BackgroundColor="#FFFFFF" >
+            <Button Text="Save Quiz"
+                    TextColor="#ffffff"
+                    Margin="0,20,0,20"
+                    WidthRequest="226"
+                    HeightRequest="41"
+                    BackgroundColor="#158FFF"
+                    CornerRadius="0" 
+                    Clicked="OnSaveQuizClicked"/>
+            <Button Text="Back"
+                    TextColor="#ffffff"
+                    Margin="0,0,0,20"
+                    WidthRequest="226"
+                    HeightRequest="41"
+                    BackgroundColor="#158FFF"
+                    CornerRadius="0" 
+                    Clicked="OnBackClicked"/>
+            <StackLayout>
+                <!--Math Checkbox Subject Choosing-->
+                <StackLayout Orientation="Horizontal" 
+                             HorizontalOptions="Center">
+                    <!--data to collect-->
+                    <CheckBox x:Name="MathCheckbox" 
+                              Color="#000000" />
+                    <Label Text="Math" 
+                           TextColor="#000000" 
+                           VerticalOptions="Center" 
+                           HorizontalTextAlignment="Start"
+                           WidthRequest="100"/>
+                </StackLayout>
+                <!--Biology Checkbox Subject Choosing-->
+                <StackLayout Orientation="Horizontal" 
+                             HorizontalOptions="Center">
+
+                    <!--data to collect-->
+                    <CheckBox x:Name="BiologyCheckbox" 
+                              Color="#000000" />
+                    <Label Text="Biology" 
+                           TextColor="#000000" 
+                           VerticalOptions="Center"
+                           HorizontalTextAlignment="Start"
+                           WidthRequest="100"/>
+                </StackLayout>
+                <!--Geography Checkbox Subject Choosing-->
+                <StackLayout Orientation="Horizontal" 
+                             HorizontalOptions="Center">
+                    <!--data to collect-->
+                    <CheckBox x:Name="GeographyCheckbox" 
+                              Color="#000000" />
+                    <Label Text="Geography" 
+                           TextColor="#000000" 
+                           VerticalOptions="Center" 
+                           HorizontalTextAlignment="Start"
+                           WidthRequest="100"/>
+                </StackLayout>
+                <!--History Checkbox Subject Choosing-->
+                <StackLayout Orientation="Horizontal" 
+                             HorizontalOptions="Center">
+                    <!--data to collect-->
+                    <CheckBox x:Name="HistoryCheckbox" 
+                              Color="#000000" />
+                    <Label Text="History" 
+                           TextColor="#000000" 
+                           VerticalOptions="Center" 
+                           HorizontalTextAlignment="Start"
+                           WidthRequest="100"/>
+                </StackLayout>
+            </StackLayout>
+            <!-- Group Question 1-->
+            <StackLayout  Margin="0,10,0,10">
+                <!--Question1-->
+                <StackLayout Orientation="Horizontal" 
+                             HorizontalOptions="Center"
+                             VerticalOptions="Center" >
+                    <Label Text="Question 1" 
+                           FontSize="Default" 
+                           TextColor="#000000" 
+                           HorizontalTextAlignment="Center" 
+                           VerticalOptions="Center" 
+                           WidthRequest="100" />
+                    <Entry x:Name="questionEntry1" 
+                           Placeholder="Enter your question here" 
+                           BackgroundColor="#FFFFFF" 
+                           TextColor="#000000" 
+                           VerticalOptions="Center" 
+                           HorizontalTextAlignment="Start"
+                           WidthRequest="200" />
+                </StackLayout>
+                <!-- Question1 -->
+                <!-- Answer 1 1-->
+                <StackLayout Orientation="Horizontal" 
+                             HorizontalOptions="Center">
+                    <CheckBox x:Name="answerCheckbox11" 
+                              Color="#000000"     />
+                    <Label Text="Answer 1." 
+                           FontSize="Default" 
+                           TextColor="#000000" 
+                           HorizontalTextAlignment="Start" 
+                           VerticalOptions="Center"/>
+                    <Entry x:Name="answerEntry11" 
+                           Placeholder="Enter answer 1 here" 
+                           BackgroundColor="#FFFFFF" 
+                           TextColor="#000000" 
+                           VerticalOptions="Center" 
+                           HorizontalTextAlignment="Start"
+                           WidthRequest="100"/>
+                </StackLayout>
+                <!-- Answer 1 1-->
+                <!-- Answer 1 2-->
+                <StackLayout Orientation="Horizontal" 
+                             HorizontalOptions="Center">
+                    <CheckBox x:Name="answerCheckbox12" 
+                              Color="#000000" />
+                    <Label Text="Answer 2." 
+                           FontSize="Default" 
+                           TextColor="#000000" 
+                           HorizontalTextAlignment="Start" 
+                           VerticalOptions="Center"/>
+                    <Entry x:Name="answerEntry12" 
+                           Placeholder="Enter answer 2 here" 
+                           BackgroundColor="#FFFFFF" 
+                           TextColor="#000000"
+                           VerticalOptions="Center" 
+                           HorizontalTextAlignment="Start"
+                           WidthRequest="100"/>
+                </StackLayout>
+                <!-- Answer 1 2-->
+                <!-- Answer 1 3-->
+                <StackLayout Orientation="Horizontal" 
+                             HorizontalOptions="Center">
+                    
+                    <CheckBox x:Name="answerCheckbox13" 
+                              Color="#000000"/>
+                    <Label Text="Answer 3." 
+                           FontSize="Default" 
+                           TextColor="#000000" 
+                           HorizontalTextAlignment="Start" 
+                           VerticalOptions="Center"/>
+                    <Entry x:Name="answerEntry13" 
+                           Placeholder="Enter answer 3 here" 
+                           BackgroundColor="#FFFFFF" 
+                           TextColor="#000000"
+                           VerticalOptions="Center" 
+                           HorizontalTextAlignment="Start"
+                           WidthRequest="100"/>
+                </StackLayout>
+                <!-- Answer 1 3-->
+                <!-- Answer 1 4-->
+                <StackLayout Orientation="Horizontal" 
+                             HorizontalOptions="Center">
+                    <CheckBox x:Name="answerCheckbox14"        
+                              Color="#000000" />
+                    <Label Text="Answer 4." 
+                            FontSize="Default" 
+                            TextColor="#000000" 
+                            HorizontalTextAlignment="Start" 
+                            VerticalOptions="Center"/>
+
+                    <Entry x:Name="answerEntry14" 
+                           Placeholder="Enter answer 4 here" 
+                           BackgroundColor="#FFFFFF" 
+                           TextColor="#000000" 
+                           VerticalOptions="Center" 
+                           HorizontalTextAlignment="Start"
+                           WidthRequest="100"/>
+                </StackLayout>
+                <!-- Answer 1 4-->             
+            </StackLayout>
+            <!-- Group Question 1-->
+
+
+
+            
+            
+            <!-- Group Question 2 -->
+            <StackLayout  Margin="0,0,0,10">
+                
+                
+                <!--Question2-->
+                <StackLayout Orientation="Horizontal" 
+                             HorizontalOptions="Center"
+                             VerticalOptions="Center" >
+                    <Label Text="Question 2" 
+                           FontSize="Default" 
+                           TextColor="#000000" 
+                           HorizontalTextAlignment="Center" 
+                           VerticalOptions="Center" 
+                           WidthRequest="100" />
+                    <Entry x:Name="questionEntry2" 
+                           Placeholder="Enter your question here" 
+                           BackgroundColor="#FFFFFF" 
+                           TextColor="#000000" 
+                           VerticalOptions="Center" 
+                           HorizontalTextAlignment="Start"
+                           WidthRequest="200" />
+                </StackLayout>
+
+                <!--Question2 -->
+
+
+                <!-- Answer 2 1-->
+                <StackLayout Orientation="Horizontal" 
+                             HorizontalOptions="Center">
+                    <CheckBox x:Name="answerCheckbox21" 
+                              Color="#000000" />
+                    <Label Text="Answer 1." 
+                           FontSize="Default" 
+                           TextColor="#000000" 
+                           HorizontalTextAlignment="Start" 
+                           VerticalOptions="Center"/>
+
+                    <Entry x:Name="answerEntry21" 
+                           Placeholder="Enter answer 1 here" 
+                           BackgroundColor="#FFFFFF" 
+                           TextColor="#000000" 
+                           VerticalOptions="Center" 
+                           HorizontalTextAlignment="Start"
+                           WidthRequest="100"/>
+                </StackLayout>
+                <!-- Answer 2 1-->
+
+
+
+                <!-- Answer 2 2-->
+                <StackLayout Orientation="Horizontal" 
+                             HorizontalOptions="Center">
+                    <CheckBox x:Name="answerCheckbox22" 
+                              Color="#000000" />
+                    <Label Text="Answer 2." 
+                           FontSize="Default" 
+                           TextColor="#000000" 
+                           HorizontalTextAlignment="Start" 
+                           VerticalOptions="Center"/>
+                    <Entry x:Name="answerEntry22" 
+                           Placeholder="Enter answer 2 here" 
+                           BackgroundColor="#FFFFFF" 
+                           TextColor="#000000"
+                           VerticalOptions="Center" 
+                           HorizontalTextAlignment="Start"
+                           WidthRequest="100"/>
+                </StackLayout>
+                <!-- Answer 2 2-->
+
+
+                <!-- Answer 2 3-->
+                <StackLayout Orientation="Horizontal" 
+                             HorizontalOptions="Center">
+                    <CheckBox x:Name="answerCheckbox23" 
+                              Color="#000000"/>
+                    <Label Text="Answer 3." 
+                           FontSize="Default" 
+                           TextColor="#000000" 
+                           HorizontalTextAlignment="Start" 
+                           VerticalOptions="Center"/>
+                    <Entry x:Name="answerEntry23" 
+                           Placeholder="Enter answer 3 here" 
+                           BackgroundColor="#FFFFFF" 
+                           TextColor="#000000"
+                           VerticalOptions="Center" 
+                           HorizontalTextAlignment="Start"
+                           WidthRequest="100"/>
+                </StackLayout>
+                <!-- Answer 2 3-->
+
+
+
+                <!-- Answer 2 4-->
+                <StackLayout Orientation="Horizontal" 
+                             HorizontalOptions="Center">
+                    <CheckBox x:Name="answerCheckbox24" 
+                              Color="#000000" />
+                    <Label Text="Answer 4." 
+                            FontSize="Default" 
+                            TextColor="#000000" 
+                            HorizontalTextAlignment="Start" 
+                            VerticalOptions="Center"/>
+
+                    <Entry x:Name="answerEntry24" 
+                           Placeholder="Enter answer 4 here" 
+                           BackgroundColor="#FFFFFF" 
+                           TextColor="#000000" 
+                           VerticalOptions="Center" 
+                           HorizontalTextAlignment="Start"
+                           WidthRequest="100"/>
+                </StackLayout>
+                <!-- Answer 2 4-->
+
+                
+            </StackLayout>
+            <!-- Group Question 2 -->
+
+
+
+            <!-- Group Question 3 -->
+            <StackLayout  Margin="0,0,0,10">
+                <!--Question3-->
+                <StackLayout Orientation="Horizontal" 
+                             HorizontalOptions="Center"
+                             VerticalOptions="Center" >
+                    <Label Text="Question 3" 
+                           FontSize="Default" 
+                           TextColor="#000000" 
+                           HorizontalTextAlignment="Center" 
+                           VerticalOptions="Center" 
+                           WidthRequest="100" />
+                    <Entry x:Name="questionEntry3" 
+                           Placeholder="Enter your question here" 
+                           BackgroundColor="#FFFFFF" 
+                           TextColor="#000000" 
+                           VerticalOptions="Center" 
+                           HorizontalTextAlignment="Start"
+                           WidthRequest="200" />
+                </StackLayout>
+
+                <!--Question3-->
+
+
+                <!-- Answer 3 1 -->
+                <StackLayout Orientation="Horizontal" 
+                             HorizontalOptions="Center">
+                    <CheckBox x:Name="answerCheckbox31"         
+                              Color="#000000" />
+                    <Label Text="Answer 1." 
+                           FontSize="Default" 
+                           TextColor="#000000" 
+                           HorizontalTextAlignment="Start" 
+                           VerticalOptions="Center"/>
+                    <Entry x:Name="answerEntry31" 
+                           Placeholder="Enter answer 1 here" 
+                      BackgroundColor="#FFFFFF" 
+                      TextColor="#000000" 
+                      VerticalOptions="Center" 
+                      HorizontalTextAlignment="Start"
+                      WidthRequest="100"/>
+                </StackLayout>
+                <!-- Answer 3 1 -->
+
+
+
+                <!-- Answer 3 2 -->
+                <StackLayout Orientation="Horizontal" 
+                        HorizontalOptions="Center">
+                    <CheckBox x:Name="answerCheckbox32" 
+                         Color="#000000" />
+                    <Label Text="Answer 2." 
+                      FontSize="Default" 
+                      TextColor="#000000" 
+                      HorizontalTextAlignment="Start" 
+                      VerticalOptions="Center"/>
+                    <Entry x:Name="answerEntry32" 
+                      Placeholder="Enter answer 2 here" 
+                      BackgroundColor="#FFFFFF" 
+                      TextColor="#000000"
+                      VerticalOptions="Center" 
+                      HorizontalTextAlignment="Start"
+                      WidthRequest="100"/>
+                </StackLayout>
+                <!-- Answer 3 2 -->
+
+
+                <!-- Answer 3 3 -->
+                <StackLayout Orientation="Horizontal" 
+                        HorizontalOptions="Center">
+                    <CheckBox x:Name="answerCheckbox33" 
+                         Color="#000000"/>
+                    <Label Text="Answer 3." 
+                      FontSize="Default" 
+                      TextColor="#000000" 
+                      HorizontalTextAlignment="Start" 
+                      VerticalOptions="Center"/>
+                    <Entry x:Name="answerEntry33" 
+                      Placeholder="Enter answer 3 here" 
+                      BackgroundColor="#FFFFFF" 
+                      TextColor="#000000"
+                      VerticalOptions="Center" 
+                      HorizontalTextAlignment="Start"
+                      WidthRequest="100"/>
+                </StackLayout>
+                <!-- Answer 3 3 -->
+
+
+
+                <!-- Answer 3 4 -->
+                       <StackLayout Orientation="Horizontal" 
+                        HorizontalOptions="Center">
+                    <CheckBox x:Name="answerCheckbox34" 
+                         Color="#000000" />
+                    <Label Text="Answer 4." 
+                       FontSize="Default" 
+                       TextColor="#000000" 
+                       HorizontalTextAlignment="Start" 
+                       VerticalOptions="Center"/>
+                    <Entry x:Name="answerEntry34" 
+                      Placeholder="Enter answer 4 here" 
+                      BackgroundColor="#FFFFFF" 
+                      TextColor="#000000" 
+                      VerticalOptions="Center" 
+                      HorizontalTextAlignment="Start"
+                      WidthRequest="100"/>
+                </StackLayout>
+                <!-- Answer 3 4-->
+            </StackLayout>
+            <!-- Group Question 3 -->
+
+
+
+
+            <!-- Group Question 4 -->
+            <StackLayout  Margin="0,0,0,10">
+
+
+                <!--Question4-->
+                <StackLayout Orientation="Horizontal" 
+                             HorizontalOptions="Center"
+                             VerticalOptions="Center" >
+                    <Label Text="Question 4" 
+                           FontSize="Default" 
+                           TextColor="#000000" 
+                           HorizontalTextAlignment="Center" 
+                           VerticalOptions="Center" 
+                           WidthRequest="100" />
+                    <Entry x:Name="questionEntry4" 
+                           Placeholder="Enter your question here" 
+                           BackgroundColor="#FFFFFF" 
+                           TextColor="#000000" 
+                           VerticalOptions="Center" 
+                           HorizontalTextAlignment="Start"
+                           WidthRequest="200" />
+                </StackLayout>
+
+                <!--Question4 -->
+
+
+                <!-- Answer 4 1-->
+                <StackLayout Orientation="Horizontal" 
+                             HorizontalOptions="Center">
+                    <CheckBox x:Name="answerCheckbox41" 
+                              Color="#000000" />
+                    <Label Text="Answer 1." 
+                           FontSize="Default" 
+                           TextColor="#000000" 
+                           HorizontalTextAlignment="Start" 
+                           VerticalOptions="Center"/>
+                    <Entry x:Name="answerEntry41" 
+                           Placeholder="Enter answer 1 here" 
+                           BackgroundColor="#FFFFFF" 
+                           TextColor="#000000" 
+                           VerticalOptions="Center" 
+                           HorizontalTextAlignment="Start"
+                           WidthRequest="100"/>
+                </StackLayout>
+                <!-- Answer 4 1-->
+
+
+
+                <!-- Answer 4 2-->
+                <StackLayout Orientation="Horizontal" 
+                             HorizontalOptions="Center">
+                    <CheckBox x:Name="answerCheckbox42"
+                              Color="#000000" />
+                    <Label Text="Answer 2." 
+                           FontSize="Default" 
+                           TextColor="#000000" 
+                           HorizontalTextAlignment="Start" 
+                           VerticalOptions="Center"/>
+                    <Entry x:Name="answerEntry42"
+                           Placeholder="Enter answer 2 here" 
+                           BackgroundColor="#FFFFFF" 
+                           TextColor="#000000"
+                           VerticalOptions="Center" 
+                           HorizontalTextAlignment="Start"
+                           WidthRequest="100"/>
+                </StackLayout>
+                <!-- Answer 4 2-->
+
+                
+                <!-- Answer 4 3 -->
+                <StackLayout Orientation="Horizontal" 
+                             HorizontalOptions="Center">
+                    <CheckBox x:Name="answerCheckbox43" 
+                              Color="#000000"/>
+                    <Label Text="Answer 3." 
+                           FontSize="Default"                    
+                           TextColor="#000000" 
+                           HorizontalTextAlignment="Start" 
+                           VerticalOptions="Center"/>
+                    <Entry x:Name="answerEntry43" 
+                           Placeholder="Enter answer 3 here" 
+                           BackgroundColor="#FFFFFF" 
+                           TextColor="#000000"
+                           VerticalOptions="Center" 
+                           HorizontalTextAlignment="Start"
+                           WidthRequest="100"/>
+                </StackLayout>
+                <!-- Answer 4 3-->
+
+
+
+                <!-- Answer 4 4-->
+                <StackLayout Orientation="Horizontal" 
+                             HorizontalOptions="Center">
+                    <CheckBox x:Name="answerCheckbox44" 
+                              Color="#000000" />
+                    <Label Text="Answer 4." 
+                            FontSize="Default" 
+                            TextColor="#000000" 
+                            HorizontalTextAlignment="Start" 
+                            VerticalOptions="Center"/>
+
+                    <Entry x:Name="answerEntry44" 
+                           Placeholder="Enter answer 4 here" 
+                           BackgroundColor="#FFFFFF" 
+                           TextColor="#000000" 
+                           VerticalOptions="Center" 
+                           HorizontalTextAlignment="Start"
+                           WidthRequest="100"/>
+                </StackLayout>
+                <!-- Answer 4 4-->
+
+
+            </StackLayout>
+            
+            <!-- Group Question 4 -->
+            
+            
+            
+            
+            
+            
+            
+            <!-- Group Question 5 -->
+            <StackLayout  Margin="0,0,0,10">
+                <!--Question5-->
+                <StackLayout Orientation="Horizontal" 
+                 HorizontalOptions="Center"
+                 VerticalOptions="Center" >
+                    <Label Text="Question 5" 
+               FontSize="Default" 
+               TextColor="#000000" 
+               HorizontalTextAlignment="Center" 
+               VerticalOptions="Center" 
+               WidthRequest="100" />
+                    <Entry x:Name="questionEntry5" 
+               Placeholder="Enter your question here" 
+               BackgroundColor="#FFFFFF" 
+               TextColor="#000000" 
+               VerticalOptions="Center" 
+               HorizontalTextAlignment="Start"
+               WidthRequest="200" />
+                </StackLayout>
+
+                <!--Question5 -->
+
+                <!-- Answer 5 1 -->
+                <StackLayout Orientation="Horizontal" 
+                 HorizontalOptions="Center">
+                    <CheckBox x:Name="answerCheckbox51"         
+                  Color="#000000" />
+                    <Label Text="Answer 1." 
+               FontSize="Default" 
+               TextColor="#000000" 
+               HorizontalTextAlignment="Start" 
+               VerticalOptions="Center"/>
+                    <Entry x:Name="answerEntry51" 
+               Placeholder="Enter answer 1 here" 
+               BackgroundColor="#FFFFFF" 
+               TextColor="#000000" 
+               VerticalOptions="Center" 
+               HorizontalTextAlignment="Start"
+               WidthRequest="100"/>
+                </StackLayout>
+                <!-- Answer 5 1 -->
+
+                <!-- Answer 5 2 -->
+                <StackLayout Orientation="Horizontal" 
+                 HorizontalOptions="Center">
+                    <CheckBox x:Name="answerCheckbox52" 
+                  Color="#000000" />
+                    <Label Text="Answer 2." 
+               FontSize="Default" 
+               TextColor="#000000" 
+               HorizontalTextAlignment="Start" 
+               VerticalOptions="Center"/>
+                    <Entry x:Name="answerEntry52" 
+               Placeholder="Enter answer 2 here" 
+               BackgroundColor="#FFFFFF" 
+               TextColor="#000000"
+               VerticalOptions="Center" 
+               HorizontalTextAlignment="Start"
+               WidthRequest="100"/>
+                </StackLayout>
+                <!-- Answer 5 2 -->
+
+                <!-- Answer 5 3 -->
+                <StackLayout Orientation="Horizontal" 
+                 HorizontalOptions="Center">
+                    <CheckBox x:Name="answerCheckbox53" 
+                  Color="#000000"/>
+                    <Label Text="Answer 3." 
+               FontSize="Default" 
+               TextColor="#000000" 
+               HorizontalTextAlignment="Start" 
+               VerticalOptions="Center"/>
+                    <Entry x:Name="answerEntry53" 
+               Placeholder="Enter answer 3 here" 
+               BackgroundColor="#FFFFFF" 
+               TextColor="#000000"
+               VerticalOptions="Center" 
+               HorizontalTextAlignment="Start"
+               WidthRequest="100"/>
+                </StackLayout>
+                <!-- Answer 5 3 -->
+
+                <!-- Answer 5 4 -->
+                <StackLayout Orientation="Horizontal" 
+                 HorizontalOptions="Center">
+                    <CheckBox x:Name="answerCheckbox54" 
+                  Color="#000000" />
+                    <Label Text="Answer 4." 
+               FontSize="Default" 
+               TextColor="#000000" 
+               HorizontalTextAlignment="Start" 
+               VerticalOptions="Center"/>
+                    <Entry x:Name="answerEntry54" 
+               Placeholder="Enter answer 4 here" 
+               BackgroundColor="#FFFFFF" 
+               TextColor="#000000" 
+               VerticalOptions="Center" 
+               HorizontalTextAlignment="Start"
+               WidthRequest="100"/>
+                </StackLayout>
+                <!-- Answer 5 4 -->
+            </StackLayout>
+            <!-- Group Question 5 -->
+
+            <!-- Group Question 6 -->
+            <StackLayout  Margin="0,0,0,10">
+                <!--Question6-->
+                <StackLayout Orientation="Horizontal" 
+                 HorizontalOptions="Center"
+                 VerticalOptions="Center" >
+                    <Label Text="Question 6" 
+               FontSize="Default" 
+               TextColor="#000000" 
+               HorizontalTextAlignment="Center" 
+               VerticalOptions="Center" 
+               WidthRequest="100" />
+                    <Entry x:Name="questionEntry6" 
+               Placeholder="Enter your question here" 
+               BackgroundColor="#FFFFFF" 
+               TextColor="#000000" 
+               VerticalOptions="Center" 
+               HorizontalTextAlignment="Start"
+               WidthRequest="200" />
+                </StackLayout>
+
+                <!--Question6 -->
+
+                <!-- Answer 6 1 -->
+                <StackLayout Orientation="Horizontal" 
+                 HorizontalOptions="Center">
+                    <CheckBox x:Name="answerCheckbox61"         
+                  Color="#000000" />
+                    <Label Text="Answer 1." 
+               FontSize="Default" 
+               TextColor="#000000" 
+               HorizontalTextAlignment="Start" 
+               VerticalOptions="Center"/>
+                    <Entry x:Name="answerEntry61" 
+               Placeholder="Enter answer 1 here" 
+               BackgroundColor="#FFFFFF" 
+               TextColor="#000000" 
+               VerticalOptions="Center" 
+               HorizontalTextAlignment="Start"
+               WidthRequest="100"/>
+                </StackLayout>
+                <!-- Answer 6 1 -->
+
+                <!-- Answer 6 2 -->
+                <StackLayout Orientation="Horizontal" 
+                 HorizontalOptions="Center">
+                    <CheckBox x:Name="answerCheckbox62" 
+                  Color="#000000" />
+                    <Label Text="Answer 2." 
+               FontSize="Default" 
+               TextColor="#000000" 
+               HorizontalTextAlignment="Start" 
+               VerticalOptions="Center"/>
+                    <Entry x:Name="answerEntry62" 
+               Placeholder="Enter answer 2 here" 
+               BackgroundColor="#FFFFFF" 
+               TextColor="#000000"
+               VerticalOptions="Center" 
+               HorizontalTextAlignment="Start"
+               WidthRequest="100"/>
+                </StackLayout>
+                <!-- Answer 6 2 -->
+
+                <!-- Answer 6 3 -->
+                <StackLayout Orientation="Horizontal" 
+                 HorizontalOptions="Center">
+                    <CheckBox x:Name="answerCheckbox63" 
+                  Color="#000000"/>
+                    <Label Text="Answer 3." 
+               FontSize="Default" 
+               TextColor="#000000" 
+               HorizontalTextAlignment="Start" 
+               VerticalOptions="Center"/>
+                    <Entry x:Name="answerEntry63" 
+               Placeholder="Enter answer 3 here" 
+               BackgroundColor="#FFFFFF" 
+               TextColor="#000000"
+               VerticalOptions="Center" 
+               HorizontalTextAlignment="Start"
+               WidthRequest="100"/>
+                </StackLayout>
+                <!-- Answer 6 3 -->
+
+                <!-- Answer 6 4 -->
+                <StackLayout Orientation="Horizontal" 
+                 HorizontalOptions="Center">
+                    <CheckBox x:Name="answerCheckbox64" 
+                  Color="#000000" />
+                    <Label Text="Answer 4." 
+               FontSize="Default" 
+               TextColor="#000000" 
+               HorizontalTextAlignment="Start" 
+               VerticalOptions="Center"/>
+                    <Entry x:Name="answerEntry64" 
+               Placeholder="Enter answer 4 here" 
+               BackgroundColor="#FFFFFF" 
+               TextColor="#000000" 
+               VerticalOptions="Center" 
+               HorizontalTextAlignment="Start"
+               WidthRequest="100"/>
+                </StackLayout>
+                <!-- Answer 6 4 -->
+            </StackLayout>
+            <!-- Group Question 6 -->
+
+
+
+            <!-- Group Question 7 -->
+            <StackLayout Margin="0,0,0,10">
+                <!--Question7-->
+                <StackLayout Orientation="Horizontal" 
+                 HorizontalOptions="Center"
+                 VerticalOptions="Center" >
+                    <Label Text="Question 7" 
+               FontSize="Default" 
+               TextColor="#000000" 
+               HorizontalTextAlignment="Center" 
+               VerticalOptions="Center" 
+               WidthRequest="100" />
+                    <Entry x:Name="questionEntry7" 
+               Placeholder="Enter your question here" 
+               BackgroundColor="#FFFFFF" 
+               TextColor="#000000" 
+               VerticalOptions="Center" 
+               HorizontalTextAlignment="Start"
+               WidthRequest="200" />
+                </StackLayout>
+
+                <!--Question7-->
+
+                <!-- Answer 7 1 -->
+                <StackLayout Orientation="Horizontal" 
+                 HorizontalOptions="Center">
+                    <CheckBox x:Name="answerCheckbox71"         
+                  Color="#000000" />
+                    <Label Text="Answer 1." 
+               FontSize="Default" 
+               TextColor="#000000" 
+               HorizontalTextAlignment="Start" 
+               VerticalOptions="Center"/>
+                    <Entry x:Name="answerEntry71" 
+               Placeholder="Enter answer 1 here" 
+               BackgroundColor="#FFFFFF" 
+               TextColor="#000000" 
+               VerticalOptions="Center" 
+               HorizontalTextAlignment="Start"
+               WidthRequest="100"/>
+                </StackLayout>
+                <!-- Answer 7 1 -->
+
+                <!-- Answer 7 2 -->
+                <StackLayout Orientation="Horizontal" 
+                 HorizontalOptions="Center">
+                    <CheckBox x:Name="answerCheckbox72" 
+                  Color="#000000" />
+                    <Label Text="Answer 2." 
+               FontSize="Default" 
+               TextColor="#000000" 
+               HorizontalTextAlignment="Start" 
+               VerticalOptions="Center"/>
+                    <Entry x:Name="answerEntry72" 
+               Placeholder="Enter answer 2 here" 
+               BackgroundColor="#FFFFFF" 
+               TextColor="#000000"
+               VerticalOptions="Center" 
+               HorizontalTextAlignment="Start"
+               WidthRequest="100"/>
+                </StackLayout>
+                <!-- Answer 7 2 -->
+
+                <!-- Answer 7 3 -->
+                <StackLayout Orientation="Horizontal" 
+                 HorizontalOptions="Center">
+                    <CheckBox x:Name="answerCheckbox73" 
+                  Color="#000000"/>
+                    <Label Text="Answer 3." 
+               FontSize="Default" 
+               TextColor="#000000" 
+               HorizontalTextAlignment="Start" 
+               VerticalOptions="Center"/>
+                    <Entry x:Name="answerEntry73" 
+               Placeholder="Enter answer 3 here" 
+               BackgroundColor="#FFFFFF" 
+               TextColor="#000000"
+               VerticalOptions="Center" 
+               HorizontalTextAlignment="Start"
+               WidthRequest="100"/>
+                </StackLayout>
+                <!-- Answer 7 3 -->
+
+                <!-- Answer 7 4 -->
+                <StackLayout Orientation="Horizontal" 
+                 HorizontalOptions="Center">
+                    <CheckBox x:Name="answerCheckbox74" 
+                  Color="#000000" />
+                    <Label Text="Answer 4." 
+               FontSize="Default" 
+               TextColor="#000000" 
+               HorizontalTextAlignment="Start" 
+               VerticalOptions="Center"/>
+                    <Entry x:Name="answerEntry74" 
+               Placeholder="Enter answer 4 here" 
+               BackgroundColor="#FFFFFF" 
+               TextColor="#000000" 
+               VerticalOptions="Center" 
+               HorizontalTextAlignment="Start"
+               WidthRequest="100"/>
+                </StackLayout>
+                <!-- Answer 7 4 -->
+            </StackLayout>
+            <!-- Group Question 7 -->
+
+            <!-- Group Question 8 -->
+            <StackLayout Margin="0,0,0,10">
+                <!--Question8-->
+                <StackLayout Orientation="Horizontal" 
+                 HorizontalOptions="Center"
+                 VerticalOptions="Center" >
+                    <Label Text="Question 8" 
+               FontSize="Default" 
+               TextColor="#000000" 
+               HorizontalTextAlignment="Center" 
+               VerticalOptions="Center" 
+               WidthRequest="100" />
+                    <Entry x:Name="questionEntry8" 
+               Placeholder="Enter your question here" 
+               BackgroundColor="#FFFFFF" 
+               TextColor="#000000" 
+               VerticalOptions="Center" 
+               HorizontalTextAlignment="Start"
+               WidthRequest="200" />
+                </StackLayout>
+
+                <!--Question8-->
+
+                <!-- Answer 8 1 -->
+                <StackLayout Orientation="Horizontal" 
+                 HorizontalOptions="Center">
+                    <CheckBox x:Name="answerCheckbox81"         
+                  Color="#000000" />
+                    <Label Text="Answer 1." 
+               FontSize="Default" 
+               TextColor="#000000" 
+               HorizontalTextAlignment="Start" 
+               VerticalOptions="Center"/>
+                    <Entry x:Name="answerEntry81" 
+               Placeholder="Enter answer 1 here" 
+               BackgroundColor="#FFFFFF" 
+               TextColor="#000000" 
+               VerticalOptions="Center" 
+               HorizontalTextAlignment="Start"
+               WidthRequest="100"/>
+                </StackLayout>
+                <!-- Answer 8 1 -->
+
+                <!-- Answer 8 2 -->
+                <StackLayout Orientation="Horizontal" 
+                 HorizontalOptions="Center">
+                    <CheckBox x:Name="answerCheckbox82" 
+                  Color="#000000" />
+                    <Label Text="Answer 2." 
+               FontSize="Default" 
+               TextColor="#000000" 
+               HorizontalTextAlignment="Start" 
+               VerticalOptions="Center"/>
+                    <Entry x:Name="answerEntry82" 
+               Placeholder="Enter answer 2 here" 
+               BackgroundColor="#FFFFFF" 
+               TextColor="#000000"
+               VerticalOptions="Center" 
+               HorizontalTextAlignment="Start"
+               WidthRequest="100"/>
+                </StackLayout>
+                <!-- Answer 8 2 -->
+
+                <!-- Answer 8 3 -->
+                <StackLayout Orientation="Horizontal" 
+                 HorizontalOptions="Center">
+                    <CheckBox x:Name="answerCheckbox83" 
+                  Color="#000000"/>
+                    <Label Text="Answer 3." 
+               FontSize="Default" 
+               TextColor="#000000" 
+               HorizontalTextAlignment="Start" 
+               VerticalOptions="Center"/>
+                    <Entry x:Name="answerEntry83" 
+               Placeholder="Enter answer 3 here" 
+               BackgroundColor="#FFFFFF" 
+               TextColor="#000000"
+               VerticalOptions="Center" 
+               HorizontalTextAlignment="Start"
+               WidthRequest="100"/>
+                </StackLayout>
+                <!-- Answer 8 3 -->
+
+                <!-- Answer 8 4 -->
+                <StackLayout Orientation="Horizontal" 
+                 HorizontalOptions="Center">
+                    <CheckBox x:Name="answerCheckbox84" 
+                  Color="#000000" />
+                    <Label Text="Answer 4." 
+               FontSize="Default" 
+               TextColor="#000000" 
+               HorizontalTextAlignment="Start" 
+               VerticalOptions="Center"/>
+                    <Entry x:Name="answerEntry84" 
+               Placeholder="Enter answer 4 here" 
+               BackgroundColor="#FFFFFF" 
+               TextColor="#000000" 
+               VerticalOptions="Center" 
+               HorizontalTextAlignment="Start"
+               WidthRequest="100"/>
+                </StackLayout>
+                <!-- Answer 8 4 -->
+            </StackLayout>
+            <!-- Group Question 8 -->
+            
+            
+            
+            
+            
+            
+            
+            <!-- Group Question 9 -->
+            <StackLayout  Margin="0,0,0,10">
+                <!--Question9-->
+                <StackLayout Orientation="Horizontal" 
+                 HorizontalOptions="Center"
+                 VerticalOptions="Center" >
+                    <Label Text="Question 9" 
+               FontSize="Default" 
+               TextColor="#000000" 
+               HorizontalTextAlignment="Center" 
+               VerticalOptions="Center" 
+               WidthRequest="100" />
+                    <Entry x:Name="questionEntry9" 
+               Placeholder="Enter your question here" 
+               BackgroundColor="#FFFFFF" 
+               TextColor="#000000" 
+               VerticalOptions="Center" 
+               HorizontalTextAlignment="Start"
+               WidthRequest="200" />
+                </StackLayout>
+
+                <!--Question9 -->
+
+                <!-- Answer 9 1 -->
+                <StackLayout Orientation="Horizontal" 
+                 HorizontalOptions="Center">
+                    <CheckBox x:Name="answerCheckbox91"         
+                  Color="#000000" />
+                    <Label Text="Answer 1." 
+               FontSize="Default" 
+               TextColor="#000000" 
+               HorizontalTextAlignment="Start" 
+               VerticalOptions="Center"/>
+                    <Entry x:Name="answerEntry91" 
+               Placeholder="Enter answer 1 here" 
+               BackgroundColor="#FFFFFF" 
+               TextColor="#000000" 
+               VerticalOptions="Center" 
+               HorizontalTextAlignment="Start"
+               WidthRequest="100"/>
+                </StackLayout>
+                <!-- Answer 9 1 -->
+
+                <!-- Answer 9 2 -->
+                <StackLayout Orientation="Horizontal" 
+                 HorizontalOptions="Center">
+                    <CheckBox x:Name="answerCheckbox92" 
+                  Color="#000000" />
+                    <Label Text="Answer 2." 
+               FontSize="Default" 
+               TextColor="#000000" 
+               HorizontalTextAlignment="Start" 
+               VerticalOptions="Center"/>
+                    <Entry x:Name="answerEntry92" 
+               Placeholder="Enter answer 2 here" 
+               BackgroundColor="#FFFFFF" 
+               TextColor="#000000"
+               VerticalOptions="Center" 
+               HorizontalTextAlignment="Start"
+               WidthRequest="100"/>
+                </StackLayout>
+                <!-- Answer 9 2 -->
+
+                <!-- Answer 9 3 -->
+                <StackLayout Orientation="Horizontal" 
+                 HorizontalOptions="Center">
+                    <CheckBox x:Name="answerCheckbox93" 
+                  Color="#000000"/>
+                    <Label Text="Answer 3." 
+               FontSize="Default" 
+               TextColor="#000000" 
+               HorizontalTextAlignment="Start" 
+               VerticalOptions="Center"/>
+                    <Entry x:Name="answerEntry93" 
+               Placeholder="Enter answer 3 here" 
+               BackgroundColor="#FFFFFF" 
+               TextColor="#000000"
+               VerticalOptions="Center" 
+               HorizontalTextAlignment="Start"
+               WidthRequest="100"/>
+                </StackLayout>
+                <!-- Answer 9 3 -->
+
+                <!-- Answer 9 4 -->
+                <StackLayout Orientation="Horizontal" 
+                 HorizontalOptions="Center">
+                    <CheckBox x:Name="answerCheckbox94" 
+                  Color="#000000" />
+                    <Label Text="Answer 4." 
+               FontSize="Default" 
+               TextColor="#000000" 
+               HorizontalTextAlignment="Start" 
+               VerticalOptions="Center"/>
+                    <Entry x:Name="answerEntry94" 
+               Placeholder="Enter answer 4 here" 
+               BackgroundColor="#FFFFFF" 
+               TextColor="#000000" 
+               VerticalOptions="Center" 
+               HorizontalTextAlignment="Start"
+               WidthRequest="100"/>
+                </StackLayout>
+                <!-- Answer 9 4-->
+            </StackLayout>
+            <!-- Group Question 9 -->
+
+            <!-- Group Question 10 -->
+            <StackLayout  Margin="0,0,0,10">
+                <!--Question10-->
+                <StackLayout Orientation="Horizontal" 
+                 HorizontalOptions="Center"
+                 VerticalOptions="Center" >
+                    <Label Text="Question 10" 
+               FontSize="Default" 
+               TextColor="#000000" 
+               HorizontalTextAlignment="Center" 
+               VerticalOptions="Center" 
+               WidthRequest="100" />
+                    <Entry x:Name="questionEntry10" 
+               Placeholder="Enter your question here" 
+               BackgroundColor="#FFFFFF" 
+               TextColor="#000000" 
+               VerticalOptions="Center" 
+               HorizontalTextAlignment="Start"
+               WidthRequest="200" />
+                </StackLayout>
+
+                <!--Question10 -->
+
+                <!-- Answer 10 1 -->
+                <StackLayout Orientation="Horizontal" 
+                 HorizontalOptions="Center">
+                    <CheckBox x:Name="answerCheckbox101"         
+                  Color="#000000" />
+                    <Label Text="Answer 1." 
+               FontSize="Default" 
+               TextColor="#000000" 
+               HorizontalTextAlignment="Start" 
+               VerticalOptions="Center"/>
+                    <Entry x:Name="answerEntry101" 
+               Placeholder="Enter answer 1 here" 
+               BackgroundColor="#FFFFFF" 
+               TextColor="#000000" 
+               VerticalOptions="Center" 
+               HorizontalTextAlignment="Start"
+               WidthRequest="100"/>
+                </StackLayout>
+                <!-- Answer 10 1 -->
+
+                <!-- Answer 10 2 -->
+                <StackLayout Orientation="Horizontal" 
+                 HorizontalOptions="Center">
+                    <CheckBox x:Name="answerCheckbox102" 
+                  Color="#000000" />
+                    <Label Text="Answer 2." 
+               FontSize="Default" 
+               TextColor="#000000" 
+               HorizontalTextAlignment="Start" 
+               VerticalOptions="Center"/>
+                    <Entry x:Name="answerEntry102" 
+               Placeholder="Enter answer 2 here" 
+               BackgroundColor="#FFFFFF" 
+               TextColor="#000000"
+               VerticalOptions="Center" 
+               HorizontalTextAlignment="Start"
+               WidthRequest="100"/>
+                </StackLayout>
+                <!-- Answer 10 2 -->
+
+                <!-- Answer 10 3 -->
+                <StackLayout Orientation="Horizontal" 
+                 HorizontalOptions="Center">
+                    <CheckBox x:Name="answerCheckbox103" 
+                  Color="#000000"/>
+                    <Label Text="Answer 3." 
+               FontSize="Default" 
+               TextColor="#000000" 
+               HorizontalTextAlignment="Start" 
+               VerticalOptions="Center"/>
+                    <Entry x:Name="answerEntry103" 
+               Placeholder="Enter answer 3 here" 
+               BackgroundColor="#FFFFFF" 
+               TextColor="#000000"
+               VerticalOptions="Center" 
+               HorizontalTextAlignment="Start"
+               WidthRequest="100"/>
+                </StackLayout>
+                <!-- Answer 10 3 -->
+
+                <!-- Answer 10 4 -->
+                <StackLayout Orientation="Horizontal" 
+                 HorizontalOptions="Center">
+                    <CheckBox x:Name="answerCheckbox104" 
+                  Color="#000000" />
+                    <Label Text="Answer 4." 
+               FontSize="Default" 
+               TextColor="#000000" 
+               HorizontalTextAlignment="Start" 
+               VerticalOptions="Center"/>
+                    <Entry x:Name="answerEntry104" 
+               Placeholder="Enter answer 4 here" 
+               BackgroundColor="#FFFFFF" 
+               TextColor="#000000" 
+               VerticalOptions="Center" 
+               HorizontalTextAlignment="Start"
+               WidthRequest="100"/>
+                </StackLayout>
+                <!-- Answer 10 4-->
+            </StackLayout>
+            <!-- Group Question 10 -->
+
+
+
+
+            <!-- Group Question 11 -->
+            <StackLayout  Margin="0,0,0,10">
+                <!--Question11-->
+                <StackLayout Orientation="Horizontal" 
+                 HorizontalOptions="Center"
+                 VerticalOptions="Center" >
+                    <Label Text="Question 11" 
+               FontSize="Default" 
+               TextColor="#000000" 
+               HorizontalTextAlignment="Center" 
+               VerticalOptions="Center" 
+               WidthRequest="100" />
+                    <Entry x:Name="questionEntry11" 
+               Placeholder="Enter your question here" 
+               BackgroundColor="#FFFFFF" 
+               TextColor="#000000" 
+               VerticalOptions="Center" 
+               HorizontalTextAlignment="Start"
+               WidthRequest="200" />
+                </StackLayout>
+
+                <!--Question11 -->
+
+                <!-- Answer 11 1 -->
+                <StackLayout Orientation="Horizontal" 
+                 HorizontalOptions="Center">
+                    <CheckBox x:Name="answerCheckbox111"         
+                  Color="#000000" />
+                    <Label Text="Answer 1." 
+               FontSize="Default" 
+               TextColor="#000000" 
+               HorizontalTextAlignment="Start" 
+               VerticalOptions="Center"/>
+                    <Entry x:Name="answerEntry111" 
+               Placeholder="Enter answer 1 here" 
+               BackgroundColor="#FFFFFF" 
+               TextColor="#000000" 
+               VerticalOptions="Center" 
+               HorizontalTextAlignment="Start"
+               WidthRequest="100"/>
+                </StackLayout>
+                <!-- Answer 11 1 -->
+
+                <!-- Answer 11 2 -->
+                <StackLayout Orientation="Horizontal" 
+                 HorizontalOptions="Center">
+                    <CheckBox x:Name="answerCheckbox112" 
+                  Color="#000000" />
+                    <Label Text="Answer 2." 
+               FontSize="Default" 
+               TextColor="#000000" 
+               HorizontalTextAlignment="Start" 
+               VerticalOptions="Center"/>
+                    <Entry x:Name="answerEntry112" 
+               Placeholder="Enter answer 2 here" 
+               BackgroundColor="#FFFFFF" 
+               TextColor="#000000"
+               VerticalOptions="Center" 
+               HorizontalTextAlignment="Start"
+               WidthRequest="100"/>
+                </StackLayout>
+                <!-- Answer 11 2 -->
+
+                <!-- Answer 11 3 -->
+                <StackLayout Orientation="Horizontal" 
+                 HorizontalOptions="Center">
+                    <CheckBox x:Name="answerCheckbox113" 
+                  Color="#000000"/>
+                    <Label Text="Answer 3." 
+               FontSize="Default" 
+               TextColor="#000000" 
+               HorizontalTextAlignment="Start" 
+               VerticalOptions="Center"/>
+                    <Entry x:Name="answerEntry113" 
+               Placeholder="Enter answer 3 here" 
+               BackgroundColor="#FFFFFF" 
+               TextColor="#000000"
+               VerticalOptions="Center" 
+               HorizontalTextAlignment="Start"
+               WidthRequest="100"/>
+                </StackLayout>
+                <!-- Answer 11 3 -->
+
+                <!-- Answer 11 4 -->
+                <StackLayout Orientation="Horizontal" 
+                 HorizontalOptions="Center">
+                    <CheckBox x:Name="answerCheckbox114" 
+                  Color="#000000" />
+                    <Label Text="Answer 4." 
+               FontSize="Default" 
+               TextColor="#000000" 
+               HorizontalTextAlignment="Start" 
+               VerticalOptions="Center"/>
+                    <Entry x:Name="answerEntry114" 
+               Placeholder="Enter answer 4 here" 
+               BackgroundColor="#FFFFFF" 
+               TextColor="#000000" 
+               VerticalOptions="Center" 
+               HorizontalTextAlignment="Start"
+               WidthRequest="100"/>
+                </StackLayout>
+                <!-- Answer 11 4 -->
+            </StackLayout>
+            <!-- Group Question 11 -->
+
+            <!-- Group Question 12 -->
+            <StackLayout  Margin="0,0,0,10">
+                <!--Question12-->
+                <StackLayout Orientation="Horizontal" 
+                 HorizontalOptions="Center"
+                 VerticalOptions="Center" >
+                    <Label Text="Question 12" 
+               FontSize="Default" 
+               TextColor="#000000" 
+               HorizontalTextAlignment="Center" 
+               VerticalOptions="Center" 
+               WidthRequest="100" />
+                    <Entry x:Name="questionEntry12" 
+               Placeholder="Enter your question here" 
+               BackgroundColor="#FFFFFF" 
+               TextColor="#000000" 
+               VerticalOptions="Center" 
+               HorizontalTextAlignment="Start"
+               WidthRequest="200" />
+                </StackLayout>
+
+                <!--Question12 -->
+
+                <!-- Answer 12 1 -->
+                <StackLayout Orientation="Horizontal" 
+                 HorizontalOptions="Center">
+                    <CheckBox x:Name="answerCheckbox121"         
+                  Color="#000000" />
+                    <Label Text="Answer 1." 
+               FontSize="Default" 
+               TextColor="#000000" 
+               HorizontalTextAlignment="Start" 
+               VerticalOptions="Center"/>
+                    <Entry x:Name="answerEntry121" 
+               Placeholder="Enter answer 1 here" 
+               BackgroundColor="#FFFFFF" 
+               TextColor="#000000" 
+               VerticalOptions="Center" 
+               HorizontalTextAlignment="Start"
+               WidthRequest="100"/>
+                </StackLayout>
+                <!-- Answer 12 1 -->
+
+                <!-- Answer 12 2 -->
+                <StackLayout Orientation="Horizontal" 
+                 HorizontalOptions="Center">
+                    <CheckBox x:Name="answerCheckbox122" 
+                  Color="#000000" />
+                    <Label Text="Answer 2." 
+               FontSize="Default" 
+               TextColor="#000000" 
+               HorizontalTextAlignment="Start" 
+               VerticalOptions="Center"/>
+                    <Entry x:Name="answerEntry122" 
+               Placeholder="Enter answer 2 here" 
+               BackgroundColor="#FFFFFF" 
+               TextColor="#000000"
+               VerticalOptions="Center" 
+               HorizontalTextAlignment="Start"
+               WidthRequest="100"/>
+                </StackLayout>
+                <!-- Answer 12 2 -->
+
+                <!-- Answer 12 3 -->
+                <StackLayout Orientation="Horizontal" 
+                 HorizontalOptions="Center">
+                    <CheckBox x:Name="answerCheckbox123" 
+                  Color="#000000"/>
+                    <Label Text="Answer 3." 
+               FontSize="Default" 
+               TextColor="#000000" 
+               HorizontalTextAlignment="Start" 
+               VerticalOptions="Center"/>
+                    <Entry x:Name="answerEntry123" 
+               Placeholder="Enter answer 3 here" 
+               BackgroundColor="#FFFFFF" 
+               TextColor="#000000"
+               VerticalOptions="Center" 
+               HorizontalTextAlignment="Start"
+               WidthRequest="100"/>
+                </StackLayout>
+                <!-- Answer 12 3 -->
+
+                <!-- Answer 12 4 -->
+                <StackLayout Orientation="Horizontal" 
+                 HorizontalOptions="Center">
+                    <CheckBox x:Name="answerCheckbox124" 
+                  Color="#000000" />
+                    <Label Text="Answer 4." 
+               FontSize="Default" 
+               TextColor="#000000" 
+               HorizontalTextAlignment="Start" 
+               VerticalOptions="Center"/>
+                    <Entry x:Name="answerEntry124" 
+               Placeholder="Enter answer 4 here" 
+               BackgroundColor="#FFFFFF" 
+               TextColor="#000000" 
+               VerticalOptions="Center" 
+               HorizontalTextAlignment="Start"
+               WidthRequest="100"/>
+                </StackLayout>
+                <!-- Answer 12 4 -->
+            </StackLayout>
+            <!-- Group Question 12 -->
+
+
+
+
+
+
+
+
+
+
+            <!-- Group Question 13 -->
+            <StackLayout Margin="0,0,0,10">
+                <!--Question13-->
+                <StackLayout Orientation="Horizontal" 
+                 HorizontalOptions="Center"
+                 VerticalOptions="Center" >
+                    <Label Text="Question 13" 
+               FontSize="Default" 
+               TextColor="#000000" 
+               HorizontalTextAlignment="Center" 
+               VerticalOptions="Center" 
+               WidthRequest="100" />
+                    <Entry x:Name="questionEntry13" 
+               Placeholder="Enter your question here" 
+               BackgroundColor="#FFFFFF" 
+               TextColor="#000000" 
+               VerticalOptions="Center" 
+               HorizontalTextAlignment="Start"
+               WidthRequest="200" />
+                </StackLayout>
+
+                <!--Question13-->
+
+                <!-- Answer 13 1 -->
+                <StackLayout Orientation="Horizontal" 
+                 HorizontalOptions="Center">
+                    <CheckBox x:Name="answerCheckbox131"         
+                  Color="#000000" />
+                    <Label Text="Answer 1." 
+               FontSize="Default" 
+               TextColor="#000000" 
+               HorizontalTextAlignment="Start" 
+               VerticalOptions="Center"/>
+                    <Entry x:Name="answerEntry131" 
+               Placeholder="Enter answer 1 here" 
+               BackgroundColor="#FFFFFF" 
+               TextColor="#000000" 
+               VerticalOptions="Center" 
+               HorizontalTextAlignment="Start"
+               WidthRequest="100"/>
+                </StackLayout>
+                <!-- Answer 13 1 -->
+
+                <!-- Answer 13 2 -->
+                <StackLayout Orientation="Horizontal" 
+                 HorizontalOptions="Center">
+                    <CheckBox x:Name="answerCheckbox132" 
+                  Color="#000000" />
+                    <Label Text="Answer 2." 
+               FontSize="Default" 
+               TextColor="#000000" 
+               HorizontalTextAlignment="Start" 
+               VerticalOptions="Center"/>
+                    <Entry x:Name="answerEntry132" 
+               Placeholder="Enter answer 2 here" 
+               BackgroundColor="#FFFFFF" 
+               TextColor="#000000"
+               VerticalOptions="Center" 
+               HorizontalTextAlignment="Start"
+               WidthRequest="100"/>
+                </StackLayout>
+                <!-- Answer 13 2 -->
+
+                <!-- Answer 13 3 -->
+                <StackLayout Orientation="Horizontal" 
+                 HorizontalOptions="Center">
+                    <CheckBox x:Name="answerCheckbox133" 
+                  Color="#000000"/>
+                    <Label Text="Answer 3." 
+               FontSize="Default" 
+               TextColor="#000000" 
+               HorizontalTextAlignment="Start" 
+               VerticalOptions="Center"/>
+                    <Entry x:Name="answerEntry133" 
+               Placeholder="Enter answer 3 here" 
+               BackgroundColor="#FFFFFF" 
+               TextColor="#000000"
+               VerticalOptions="Center" 
+               HorizontalTextAlignment="Start"
+               WidthRequest="100"/>
+                </StackLayout>
+                <!-- Answer 13 3 -->
+
+                <!-- Answer 13 4 -->
+                <StackLayout Orientation="Horizontal" 
+                 HorizontalOptions="Center">
+                    <CheckBox x:Name="answerCheckbox134" 
+                  Color="#000000" />
+                    <Label Text="Answer 4." 
+               FontSize="Default" 
+               TextColor="#000000" 
+               HorizontalTextAlignment="Start" 
+               VerticalOptions="Center"/>
+                    <Entry x:Name="answerEntry134" 
+               Placeholder="Enter answer 4 here" 
+               BackgroundColor="#FFFFFF" 
+               TextColor="#000000" 
+               VerticalOptions="Center" 
+               HorizontalTextAlignment="Start"
+               WidthRequest="100"/>
+                </StackLayout>
+                <!-- Answer 13 4 -->
+            </StackLayout>
+            <!-- Group Question 13 -->
+
+            <!-- Group Question 14 -->
+            <StackLayout Margin="0,0,0,10">
+                <!--Question14-->
+                <StackLayout Orientation="Horizontal" 
+                 HorizontalOptions="Center"
+                 VerticalOptions="Center" >
+                    <Label Text="Question 14" 
+               FontSize="Default" 
+               TextColor="#000000" 
+               HorizontalTextAlignment="Center" 
+               VerticalOptions="Center" 
+               WidthRequest="100" />
+                    <Entry x:Name="questionEntry14" 
+               Placeholder="Enter your question here" 
+               BackgroundColor="#FFFFFF" 
+               TextColor="#000000" 
+               VerticalOptions="Center" 
+               HorizontalTextAlignment="Start"
+               WidthRequest="200" />
+                </StackLayout>
+
+                <!--Question14-->
+
+                <!-- Answer 14 1 -->
+                <StackLayout Orientation="Horizontal" 
+                 HorizontalOptions="Center">
+                    <CheckBox x:Name="answerCheckbox141"         
+                  Color="#000000" />
+                    <Label Text="Answer 1." 
+               FontSize="Default" 
+               TextColor="#000000" 
+               HorizontalTextAlignment="Start" 
+               VerticalOptions="Center"/>
+                    <Entry x:Name="answerEntry141" 
+               Placeholder="Enter answer 1 here" 
+               BackgroundColor="#FFFFFF" 
+               TextColor="#000000" 
+               VerticalOptions="Center" 
+               HorizontalTextAlignment="Start"
+               WidthRequest="100"/>
+                </StackLayout>
+                <!-- Answer 14 1 -->
+
+                <!-- Answer 14 2 -->
+                <StackLayout Orientation="Horizontal" 
+                 HorizontalOptions="Center">
+                    <CheckBox x:Name="answerCheckbox142" 
+                  Color="#000000" />
+                    <Label Text="Answer 2." 
+               FontSize="Default" 
+               TextColor="#000000" 
+               HorizontalTextAlignment="Start" 
+               VerticalOptions="Center"/>
+                    <Entry x:Name="answerEntry142" 
+               Placeholder="Enter answer 2 here" 
+               BackgroundColor="#FFFFFF" 
+               TextColor="#000000"
+               VerticalOptions="Center" 
+               HorizontalTextAlignment="Start"
+               WidthRequest="100"/>
+                </StackLayout>
+                <!-- Answer 14 2 -->
+
+                <!-- Answer 14 3 -->
+                <StackLayout Orientation="Horizontal" 
+                 HorizontalOptions="Center">
+                    <CheckBox x:Name="answerCheckbox143" 
+                  Color="#000000"/>
+                    <Label Text="Answer 3." 
+               FontSize="Default" 
+               TextColor="#000000" 
+               HorizontalTextAlignment="Start" 
+               VerticalOptions="Center"/>
+                    <Entry x:Name="answerEntry143" 
+               Placeholder="Enter answer 3 here" 
+               BackgroundColor="#FFFFFF" 
+               TextColor="#000000"
+               VerticalOptions="Center" 
+               HorizontalTextAlignment="Start"
+               WidthRequest="100"/>
+                </StackLayout>
+                <!-- Answer 14 3 -->
+
+                <!-- Answer 14 4 -->
+                <StackLayout Orientation="Horizontal" 
+                 HorizontalOptions="Center">
+                    <CheckBox x:Name="answerCheckbox144" 
+                  Color="#000000" />
+                    <Label Text="Answer 4." 
+               FontSize="Default" 
+               TextColor="#000000" 
+               HorizontalTextAlignment="Start" 
+               VerticalOptions="Center"/>
+                    <Entry x:Name="answerEntry144" 
+               Placeholder="Enter answer 4 here" 
+               BackgroundColor="#FFFFFF" 
+               TextColor="#000000" 
+               VerticalOptions="Center" 
+               HorizontalTextAlignment="Start"
+               WidthRequest="100"/>
+                </StackLayout>
+                <!-- Answer 14 4 -->
+            </StackLayout>
+            <!-- Group Question 14 -->
+
+
+
+
+
+
+            <!-- Group Question 15 -->
+            <StackLayout  Margin="0,0,0,10">
+                <!--Question15-->
+                <StackLayout Orientation="Horizontal" 
+                 HorizontalOptions="Center"
+                 VerticalOptions="Center" >
+                    <Label Text="Question 15" 
+               FontSize="Default" 
+               TextColor="#000000" 
+               HorizontalTextAlignment="Center" 
+               VerticalOptions="Center" 
+               WidthRequest="100" />
+                    <Entry x:Name="questionEntry15" 
+               Placeholder="Enter your question here" 
+               BackgroundColor="#FFFFFF" 
+               TextColor="#000000" 
+               VerticalOptions="Center" 
+               HorizontalTextAlignment="Start"
+               WidthRequest="200" />
+                </StackLayout>
+
+                <!--Question15 -->
+
+                <!-- Answer 15 1 -->
+                <StackLayout Orientation="Horizontal" 
+                 HorizontalOptions="Center">
+                    <CheckBox x:Name="answerCheckbox151"         
+                  Color="#000000" />
+                    <Label Text="Answer 1." 
+               FontSize="Default" 
+               TextColor="#000000" 
+               HorizontalTextAlignment="Start" 
+               VerticalOptions="Center"/>
+                    <Entry x:Name="answerEntry151" 
+               Placeholder="Enter answer 1 here" 
+               BackgroundColor="#FFFFFF" 
+               TextColor="#000000" 
+               VerticalOptions="Center" 
+               HorizontalTextAlignment="Start"
+               WidthRequest="100"/>
+                </StackLayout>
+                <!-- Answer 15 1 -->
+
+                <!-- Answer 15 2 -->
+                <StackLayout Orientation="Horizontal" 
+                 HorizontalOptions="Center">
+                    <CheckBox x:Name="answerCheckbox152" 
+                  Color="#000000" />
+                    <Label Text="Answer 2." 
+               FontSize="Default" 
+               TextColor="#000000" 
+               HorizontalTextAlignment="Start" 
+               VerticalOptions="Center"/>
+                    <Entry x:Name="answerEntry152" 
+               Placeholder="Enter answer 2 here" 
+               BackgroundColor="#FFFFFF" 
+               TextColor="#000000"
+               VerticalOptions="Center" 
+               HorizontalTextAlignment="Start"
+               WidthRequest="100"/>
+                </StackLayout>
+                <!-- Answer 15 2 -->
+
+                <!-- Answer 15 3 -->
+                <StackLayout Orientation="Horizontal" 
+                 HorizontalOptions="Center">
+                    <CheckBox x:Name="answerCheckbox153" 
+                  Color="#000000"/>
+                    <Label Text="Answer 3." 
+               FontSize="Default" 
+               TextColor="#000000" 
+               HorizontalTextAlignment="Start" 
+               VerticalOptions="Center"/>
+                    <Entry x:Name="answerEntry153" 
+               Placeholder="Enter answer 3 here" 
+               BackgroundColor="#FFFFFF" 
+               TextColor="#000000"
+               VerticalOptions="Center" 
+               HorizontalTextAlignment="Start"
+               WidthRequest="100"/>
+                </StackLayout>
+                <!-- Answer 15 3 -->
+
+                <!-- Answer 15 4 -->
+                <StackLayout Orientation="Horizontal" 
+                 HorizontalOptions="Center">
+                    <CheckBox x:Name="answerCheckbox154" 
+                  Color="#000000" />
+                    <Label Text="Answer 4." 
+               FontSize="Default" 
+               TextColor="#000000" 
+               HorizontalTextAlignment="Start" 
+               VerticalOptions="Center"/>
+                    <Entry x:Name="answerEntry154" 
+               Placeholder="Enter answer 4 here" 
+               BackgroundColor="#FFFFFF" 
+               TextColor="#000000" 
+               VerticalOptions="Center" 
+               HorizontalTextAlignment="Start"
+               WidthRequest="100"/>
+                </StackLayout>
+                <!-- Answer 15 4-->
+            </StackLayout>
+            <!-- Group Question 15 -->
+
+            <!-- Group Question 16 -->
+            <StackLayout  Margin="0,0,0,10">
+                <!--Question16-->
+                <StackLayout Orientation="Horizontal" 
+                 HorizontalOptions="Center"
+                 VerticalOptions="Center" >
+                    <Label Text="Question 16" 
+               FontSize="Default" 
+               TextColor="#000000" 
+               HorizontalTextAlignment="Center" 
+               VerticalOptions="Center" 
+               WidthRequest="100" />
+                    <Entry x:Name="questionEntry16" 
+               Placeholder="Enter your question here" 
+               BackgroundColor="#FFFFFF" 
+               TextColor="#000000" 
+               VerticalOptions="Center" 
+               HorizontalTextAlignment="Start"
+               WidthRequest="200" />
+                </StackLayout>
+
+                <!--Question16 -->
+
+                <!-- Answer 16 1 -->
+                <StackLayout Orientation="Horizontal" 
+                 HorizontalOptions="Center">
+                    <CheckBox x:Name="answerCheckbox161"         
+                  Color="#000000" />
+                    <Label Text="Answer 1." 
+               FontSize="Default" 
+               TextColor="#000000" 
+               HorizontalTextAlignment="Start" 
+               VerticalOptions="Center"/>
+                    <Entry x:Name="answerEntry161" 
+               Placeholder="Enter answer 1 here" 
+               BackgroundColor="#FFFFFF" 
+               TextColor="#000000" 
+               VerticalOptions="Center" 
+               HorizontalTextAlignment="Start"
+               WidthRequest="100"/>
+                </StackLayout>
+                <!-- Answer 16 1 -->
+
+                <!-- Answer 16 2 -->
+                <StackLayout Orientation="Horizontal" 
+                 HorizontalOptions="Center">
+                    <CheckBox x:Name="answerCheckbox162" 
+                  Color="#000000" />
+                    <Label Text="Answer 2." 
+               FontSize="Default" 
+               TextColor="#000000" 
+               HorizontalTextAlignment="Start" 
+               VerticalOptions="Center"/>
+                    <Entry x:Name="answerEntry162" 
+               Placeholder="Enter answer 2 here" 
+               BackgroundColor="#FFFFFF" 
+               TextColor="#000000"
+               VerticalOptions="Center" 
+               HorizontalTextAlignment="Start"
+               WidthRequest="100"/>
+                </StackLayout>
+                <!-- Answer 16 2 -->
+
+                <!-- Answer 16 3 -->
+                <StackLayout Orientation="Horizontal" 
+                 HorizontalOptions="Center">
+                    <CheckBox x:Name="answerCheckbox163" 
+                  Color="#000000"/>
+                    <Label Text="Answer 3." 
+               FontSize="Default" 
+               TextColor="#000000" 
+               HorizontalTextAlignment="Start" 
+               VerticalOptions="Center"/>
+                    <Entry x:Name="answerEntry163" 
+               Placeholder="Enter answer 3 here" 
+               BackgroundColor="#FFFFFF" 
+               TextColor="#000000"
+               VerticalOptions="Center" 
+               HorizontalTextAlignment="Start"
+               WidthRequest="100"/>
+                </StackLayout>
+                <!-- Answer 16 3 -->
+
+                <!-- Answer 16 4 -->
+                <StackLayout Orientation="Horizontal" 
+                 HorizontalOptions="Center">
+                    <CheckBox x:Name="answerCheckbox164" 
+                  Color="#000000" />
+                    <Label Text="Answer 4." 
+               FontSize="Default" 
+               TextColor="#000000" 
+               HorizontalTextAlignment="Start" 
+               VerticalOptions="Center"/>
+                    <Entry x:Name="answerEntry164" 
+               Placeholder="Enter answer 4 here" 
+               BackgroundColor="#FFFFFF" 
+               TextColor="#000000" 
+               VerticalOptions="Center" 
+               HorizontalTextAlignment="Start"
+               WidthRequest="100"/>
+                </StackLayout>
+                <!-- Answer 16 4-->
+            </StackLayout>
+            <!-- Group Question 16 -->
+
+
+
+
+
+
+            <!-- Group Question 17 -->
+            <StackLayout  Margin="0,0,0,10">
+                <!--Question17-->
+                <StackLayout Orientation="Horizontal" 
+                 HorizontalOptions="Center"
+                 VerticalOptions="Center" >
+                    <Label Text="Question 17" 
+               FontSize="Default" 
+               TextColor="#000000" 
+               HorizontalTextAlignment="Center" 
+               VerticalOptions="Center" 
+               WidthRequest="100" />
+                    <Entry x:Name="questionEntry17" 
+               Placeholder="Enter your question here" 
+               BackgroundColor="#FFFFFF" 
+               TextColor="#000000" 
+               VerticalOptions="Center" 
+               HorizontalTextAlignment="Start"
+               WidthRequest="200" />
+                </StackLayout>
+
+                <!--Question17 -->
+
+                <!-- Answer 17 1 -->
+                <StackLayout Orientation="Horizontal" 
+                 HorizontalOptions="Center">
+                    <CheckBox x:Name="answerCheckbox171"         
+                  Color="#000000" />
+                    <Label Text="Answer 1." 
+               FontSize="Default" 
+               TextColor="#000000" 
+               HorizontalTextAlignment="Start" 
+               VerticalOptions="Center"/>
+                    <Entry x:Name="answerEntry171" 
+               Placeholder="Enter answer 1 here" 
+               BackgroundColor="#FFFFFF" 
+               TextColor="#000000" 
+               VerticalOptions="Center" 
+               HorizontalTextAlignment="Start"
+               WidthRequest="100"/>
+                </StackLayout>
+                <!-- Answer 17 1 -->
+
+                <!-- Answer 17 2 -->
+                <StackLayout Orientation="Horizontal" 
+                 HorizontalOptions="Center">
+                    <CheckBox x:Name="answerCheckbox172" 
+                  Color="#000000" />
+                    <Label Text="Answer 2." 
+               FontSize="Default" 
+               TextColor="#000000" 
+               HorizontalTextAlignment="Start" 
+               VerticalOptions="Center"/>
+                    <Entry x:Name="answerEntry172" 
+               Placeholder="Enter answer 2 here" 
+               BackgroundColor="#FFFFFF" 
+               TextColor="#000000"
+               VerticalOptions="Center" 
+               HorizontalTextAlignment="Start"
+               WidthRequest="100"/>
+                </StackLayout>
+                <!-- Answer 17 2 -->
+
+                <!-- Answer 17 3 -->
+                <StackLayout Orientation="Horizontal" 
+                 HorizontalOptions="Center">
+                    <CheckBox x:Name="answerCheckbox173" 
+                  Color="#000000"/>
+                    <Label Text="Answer 3." 
+               FontSize="Default" 
+               TextColor="#000000" 
+               HorizontalTextAlignment="Start" 
+               VerticalOptions="Center"/>
+                    <Entry x:Name="answerEntry173" 
+               Placeholder="Enter answer 3 here" 
+               BackgroundColor="#FFFFFF" 
+               TextColor="#000000"
+               VerticalOptions="Center" 
+               HorizontalTextAlignment="Start"
+               WidthRequest="100"/>
+                </StackLayout>
+                <!-- Answer 17 3 -->
+
+                <!-- Answer 17 4 -->
+                <StackLayout Orientation="Horizontal" 
+                 HorizontalOptions="Center">
+                    <CheckBox x:Name="answerCheckbox174" 
+                  Color="#000000" />
+                    <Label Text="Answer 4." 
+               FontSize="Default" 
+               TextColor="#000000" 
+               HorizontalTextAlignment="Start" 
+               VerticalOptions="Center"/>
+                    <Entry x:Name="answerEntry174" 
+               Placeholder="Enter answer 4 here" 
+               BackgroundColor="#FFFFFF" 
+               TextColor="#000000" 
+               VerticalOptions="Center" 
+               HorizontalTextAlignment="Start"
+               WidthRequest="100"/>
+                </StackLayout>
+                <!-- Answer 17 4 -->
+            </StackLayout>
+            <!-- Group Question 17 -->
+
+            <!-- Group Question 18 -->
+            <StackLayout  Margin="0,0,0,10">
+                <!--Question18-->
+                <StackLayout Orientation="Horizontal" 
+                 HorizontalOptions="Center"
+                 VerticalOptions="Center" >
+                    <Label Text="Question 18" 
+               FontSize="Default" 
+               TextColor="#000000" 
+               HorizontalTextAlignment="Center" 
+               VerticalOptions="Center" 
+               WidthRequest="100" />
+                    <Entry x:Name="questionEntry18" 
+               Placeholder="Enter your question here" 
+               BackgroundColor="#FFFFFF" 
+               TextColor="#000000" 
+               VerticalOptions="Center" 
+               HorizontalTextAlignment="Start"
+               WidthRequest="200" />
+                </StackLayout>
+
+                <!--Question18 -->
+
+                <!-- Answer 18 1 -->
+                <StackLayout Orientation="Horizontal" 
+                 HorizontalOptions="Center">
+                    <CheckBox x:Name="answerCheckbox181"         
+                  Color="#000000" />
+                    <Label Text="Answer 1." 
+               FontSize="Default" 
+               TextColor="#000000" 
+               HorizontalTextAlignment="Start" 
+               VerticalOptions="Center"/>
+                    <Entry x:Name="answerEntry181" 
+               Placeholder="Enter answer 1 here" 
+               BackgroundColor="#FFFFFF" 
+               TextColor="#000000" 
+               VerticalOptions="Center" 
+               HorizontalTextAlignment="Start"
+               WidthRequest="100"/>
+                </StackLayout>
+                <!-- Answer 18 1 -->
+
+                <!-- Answer 18 2 -->
+                <StackLayout Orientation="Horizontal" 
+                 HorizontalOptions="Center">
+                    <CheckBox x:Name="answerCheckbox182" 
+                  Color="#000000" />
+                    <Label Text="Answer 2." 
+               FontSize="Default" 
+               TextColor="#000000" 
+               HorizontalTextAlignment="Start" 
+               VerticalOptions="Center"/>
+                    <Entry x:Name="answerEntry182" 
+               Placeholder="Enter answer 2 here" 
+               BackgroundColor="#FFFFFF" 
+               TextColor="#000000"
+               VerticalOptions="Center" 
+               HorizontalTextAlignment="Start"
+               WidthRequest="100"/>
+                </StackLayout>
+                <!-- Answer 18 2 -->
+
+                <!-- Answer 18 3 -->
+                <StackLayout Orientation="Horizontal" 
+                 HorizontalOptions="Center">
+                    <CheckBox x:Name="answerCheckbox183" 
+                  Color="#000000"/>
+                    <Label Text="Answer 3." 
+               FontSize="Default" 
+               TextColor="#000000" 
+               HorizontalTextAlignment="Start" 
+               VerticalOptions="Center"/>
+                    <Entry x:Name="answerEntry183" 
+               Placeholder="Enter answer 3 here" 
+               BackgroundColor="#FFFFFF" 
+               TextColor="#000000"
+               VerticalOptions="Center" 
+               HorizontalTextAlignment="Start"
+               WidthRequest="100"/>
+                </StackLayout>
+                <!-- Answer 18 3 -->
+
+                <!-- Answer 18 4 -->
+                <StackLayout Orientation="Horizontal" 
+                 HorizontalOptions="Center">
+                    <CheckBox x:Name="answerCheckbox184" 
+                  Color="#000000" />
+                    <Label Text="Answer 4." 
+               FontSize="Default" 
+               TextColor="#000000" 
+               HorizontalTextAlignment="Start" 
+               VerticalOptions="Center"/>
+                    <Entry x:Name="answerEntry184" 
+               Placeholder="Enter answer 4 here" 
+               BackgroundColor="#FFFFFF" 
+               TextColor="#000000" 
+               VerticalOptions="Center" 
+               HorizontalTextAlignment="Start"
+               WidthRequest="100"/>
+                </StackLayout>
+                <!-- Answer 18 4 -->
+            </StackLayout>
+            <!-- Group Question 18 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- Group Question 19 -->
+            <StackLayout Margin="0,0,0,10">
+                <!--Question19-->
+                <StackLayout Orientation="Horizontal" 
+                 HorizontalOptions="Center"
+                 VerticalOptions="Center" >
+                    <Label Text="Question 19" 
+               FontSize="Default" 
+               TextColor="#000000" 
+               HorizontalTextAlignment="Center" 
+               VerticalOptions="Center" 
+               WidthRequest="100" />
+                    <Entry x:Name="questionEntry19" 
+               Placeholder="Enter your question here" 
+               BackgroundColor="#FFFFFF" 
+               TextColor="#000000" 
+               VerticalOptions="Center" 
+               HorizontalTextAlignment="Start"
+               WidthRequest="200" />
+                </StackLayout>
+
+                <!--Question19-->
+
+                <!-- Answer 19 1 -->
+                <StackLayout Orientation="Horizontal" 
+                 HorizontalOptions="Center">
+                    <CheckBox x:Name="answerCheckbox191"         
+                  Color="#000000" />
+                    <Label Text="Answer 1." 
+               FontSize="Default" 
+               TextColor="#000000" 
+               HorizontalTextAlignment="Start" 
+               VerticalOptions="Center"/>
+                    <Entry x:Name="answerEntry191" 
+               Placeholder="Enter answer 1 here" 
+               BackgroundColor="#FFFFFF" 
+               TextColor="#000000" 
+               VerticalOptions="Center" 
+               HorizontalTextAlignment="Start"
+               WidthRequest="100"/>
+                </StackLayout>
+                <!-- Answer 19 1 -->
+
+                <!-- Answer 19 2 -->
+                <StackLayout Orientation="Horizontal" 
+                 HorizontalOptions="Center">
+                    <CheckBox x:Name="answerCheckbox192" 
+                  Color="#000000" />
+                    <Label Text="Answer 2." 
+               FontSize="Default" 
+               TextColor="#000000" 
+               HorizontalTextAlignment="Start" 
+               VerticalOptions="Center"/>
+                    <Entry x:Name="answerEntry192" 
+               Placeholder="Enter answer 2 here" 
+               BackgroundColor="#FFFFFF" 
+               TextColor="#000000"
+               VerticalOptions="Center" 
+               HorizontalTextAlignment="Start"
+               WidthRequest="100"/>
+                </StackLayout>
+                <!-- Answer 19 2 -->
+
+                <!-- Answer 19 3 -->
+                <StackLayout Orientation="Horizontal" 
+                 HorizontalOptions="Center">
+                    <CheckBox x:Name="answerCheckbox193" 
+                  Color="#000000"/>
+                    <Label Text="Answer 3." 
+               FontSize="Default" 
+               TextColor="#000000" 
+               HorizontalTextAlignment="Start" 
+               VerticalOptions="Center"/>
+                    <Entry x:Name="answerEntry193" 
+               Placeholder="Enter answer 3 here" 
+               BackgroundColor="#FFFFFF" 
+               TextColor="#000000"
+               VerticalOptions="Center" 
+               HorizontalTextAlignment="Start"
+               WidthRequest="100"/>
+                </StackLayout>
+                <!-- Answer 19 3 -->
+
+                <!-- Answer 19 4 -->
+                <StackLayout Orientation="Horizontal" 
+                 HorizontalOptions="Center">
+                    <CheckBox x:Name="answerCheckbox194" 
+                  Color="#000000" />
+                    <Label Text="Answer 4." 
+               FontSize="Default" 
+               TextColor="#000000" 
+               HorizontalTextAlignment="Start" 
+               VerticalOptions="Center"/>
+                    <Entry x:Name="answerEntry194" 
+               Placeholder="Enter answer 4 here" 
+               BackgroundColor="#FFFFFF" 
+               TextColor="#000000" 
+               VerticalOptions="Center" 
+               HorizontalTextAlignment="Start"
+               WidthRequest="100"/>
+                </StackLayout>
+                <!-- Answer 19 4 -->
+            </StackLayout>
+            <!-- Group Question 19 -->
+
+            <!-- Group Question 20 -->
+            <StackLayout Margin="0,0,0,10">
+                <!--Question20-->
+                <StackLayout Orientation="Horizontal" 
+                 HorizontalOptions="Center"
+                 VerticalOptions="Center" >
+                    <Label Text="Question 20" 
+               FontSize="Default" 
+               TextColor="#000000" 
+               HorizontalTextAlignment="Center" 
+               VerticalOptions="Center" 
+               WidthRequest="100" />
+                    <Entry x:Name="questionEntry20" 
+               Placeholder="Enter your question here" 
+               BackgroundColor="#FFFFFF" 
+               TextColor="#000000" 
+               VerticalOptions="Center" 
+               HorizontalTextAlignment="Start"
+               WidthRequest="200" />
+                </StackLayout>
+
+                <!--Question20-->
+
+                <!-- Answer 20 1 -->
+                <StackLayout Orientation="Horizontal" 
+                 HorizontalOptions="Center">
+                    <CheckBox x:Name="answerCheckbox201"         
+                  Color="#000000" />
+                    <Label Text="Answer 1." 
+               FontSize="Default" 
+               TextColor="#000000" 
+               HorizontalTextAlignment="Start" 
+               VerticalOptions="Center"/>
+                    <Entry x:Name="answerEntry201" 
+               Placeholder="Enter answer 1 here" 
+               BackgroundColor="#FFFFFF" 
+               TextColor="#000000" 
+               VerticalOptions="Center" 
+               HorizontalTextAlignment="Start"
+               WidthRequest="100"/>
+                </StackLayout>
+                <!-- Answer 20 1 -->
+
+                <!-- Answer 20 2 -->
+                <StackLayout Orientation="Horizontal" 
+                 HorizontalOptions="Center">
+                    <CheckBox x:Name="answerCheckbox202" 
+                  Color="#000000" />
+                    <Label Text="Answer 2." 
+               FontSize="Default" 
+               TextColor="#000000" 
+               HorizontalTextAlignment="Start" 
+               VerticalOptions="Center"/>
+                    <Entry x:Name="answerEntry202" 
+               Placeholder="Enter answer 2 here" 
+               BackgroundColor="#FFFFFF" 
+               TextColor="#000000"
+               VerticalOptions="Center" 
+               HorizontalTextAlignment="Start"
+               WidthRequest="100"/>
+                </StackLayout>
+                <!-- Answer 20 2 -->
+
+                <!-- Answer 20 3 -->
+                <StackLayout Orientation="Horizontal" 
+                 HorizontalOptions="Center">
+                    <CheckBox x:Name="answerCheckbox203" 
+                  Color="#000000"/>
+                    <Label Text="Answer 3." 
+               FontSize="Default" 
+               TextColor="#000000" 
+               HorizontalTextAlignment="Start" 
+               VerticalOptions="Center"/>
+                    <Entry x:Name="answerEntry203" 
+               Placeholder="Enter answer 3 here" 
+               BackgroundColor="#FFFFFF" 
+               TextColor="#000000"
+               VerticalOptions="Center" 
+               HorizontalTextAlignment="Start"
+               WidthRequest="100"/>
+                </StackLayout>
+                <!-- Answer 20 3 -->
+
+                <!-- Answer 20 4 -->
+                <StackLayout Orientation="Horizontal" 
+                 HorizontalOptions="Center">
+                    <CheckBox x:Name="answerCheckbox204" 
+                  Color="#000000" />
+                    <Label Text="Answer 4." 
+               FontSize="Default" 
+               TextColor="#000000" 
+               HorizontalTextAlignment="Start" 
+               VerticalOptions="Center"/>
+                    <Entry x:Name="answerEntry204" 
+               Placeholder="Enter answer 4 here" 
+               BackgroundColor="#FFFFFF" 
+               TextColor="#000000" 
+               VerticalOptions="Center" 
+               HorizontalTextAlignment="Start"
+               WidthRequest="100"/>
+                </StackLayout>
+                <!-- Answer 20 4 -->
+            </StackLayout>
+            <!-- Group Question 20 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </StackLayout >
+    </ScrollView>
+</ContentPage>

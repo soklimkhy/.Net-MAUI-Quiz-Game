@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Quiz_Game.View.SubjectDetailPage"
+             BackgroundColor="#158FFF">
+    <ScrollView>
+        <StackLayout VerticalOptions="Center" 
+                     HorizontalOptions="Center" 
+                     WidthRequest="308"
+                     BackgroundColor="#FFFFFF"
+                     Margin="0,30,0,0">
+            <Label Text="Quiz Detail"
+                   FontSize="24"
+                   WidthRequest="308"
+                   HeightRequest="91"
+                   BackgroundColor="#007DF0"
+                   VerticalTextAlignment="Center"
+                   HorizontalTextAlignment="Center"/>
+            <Button Text="Edit"
+                    TextColor="#ffffff"
+                    Margin="0,20,0,20"
+                    WidthRequest="226"
+                    HeightRequest="41"
+                    BackgroundColor="#158FFF"
+                    CornerRadius="0" 
+                    Clicked="onEditButtonClicked"/>
+            <Button Text="Delete"
+                    TextColor="#ffffff"
+                    Margin="0,0,0,20"
+                    WidthRequest="226"
+                    HeightRequest="41"
+                    BackgroundColor="#158FFF"
+                    CornerRadius="0" 
+                    Clicked="onDeleteButtonClicked"/>
+            <Button Text="Back"
+                    TextColor="#ffffff"
+                    Margin="0,0,0,20"
+                    WidthRequest="226"
+                    HeightRequest="41"
+                    BackgroundColor="#158FFF"
+                    CornerRadius="0" 
+                    Clicked="OnBackClicked"/>
+
+            <StackLayout x:Name="QuizLayout" VerticalOptions="Center" 
+                         HorizontalOptions="Center"                 
+                         BackgroundColor="#FFFFFF" >
+            <!-- Quiz questions and answers will be added here dynamically -->
+            </StackLayout>
+        
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
